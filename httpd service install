@@ -2,7 +2,7 @@
 # use this for you user data (script from top to bottom)
 # install httpd (Linux 2 version)
 yum update -y
-yum install httpd
+yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
-echo "<h1>Hello world from $(hostname -f)</h1>" > /var/www/index.html
+echo "<h1>Hello world from $(hostname -f)</h1>" > /var/www/html/index.html
